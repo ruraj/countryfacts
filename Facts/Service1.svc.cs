@@ -31,9 +31,12 @@ namespace Facts
 
     async private Task<List<Value>> GetDataImpl()
     {
+      // TODO A more elaborate API with country and field type selection
+      //
+
       // Setup the configuration to support document loading
       var config = Configuration.Default.WithDefaultLoader();
-      // Load the names of all The Big Bang Theory episodes from Wikipedia
+      // Load the CIA page
       var address = "https://www.cia.gov/library/publications/the-world-factbook/geos/by.html";
       // Asynchronously get the document in a new context using the configuration
       var document = await BrowsingContext.New(config).OpenAsync(address);
@@ -101,47 +104,10 @@ namespace Facts
         sl.SaveAs(tempFilePath);
 
         return tempFilePath;
-
-        //var excel = new Application();
-        //excel.Visible = false;
-        //excel.DisplayAlerts = false;
-        //var workBook = excel.Workbooks.Add(Type.Missing);
-
-        //var workSheet = (Worksheet)workBook.ActiveSheet;
-        //workSheet.Name = "Burundi";
-
-        //workSheet.Range[workSheet.Cells[1, 1], workSheet.Cells[1, 2]].Merge();
-        //workSheet.Cells[1, 1] = "Burundi Electricity Facts";
-        //workSheet.Cells.Font.Size = 12;
-
-        //var rowcount = 0;
-
-        //// Write the column headers
-        //workSheet.Cells[2, 1] = "Field";
-        //workSheet.Cells[2, 2] = "Value";
-        //workSheet.Cells[2, 3] = "Unit";
-
-        //// Fill in rows
-        //foreach (Value value in values)
-        //{
-        //  rowcount += 1;
-
-        //  workSheet.Cells[rowcount, 1] = value.Name;
-        //  workSheet.Cells[rowcount, 2] = value.Val;
-        //  workSheet.Cells[rowcount, 3] = value.Unit;
-        //}
-
-        //var tempFilePath = Path.GetTempFileName();
-
-        //workBook.SaveAs(tempFilePath);
-        //workBook.Close();
-        //excel.Quit();
-
-        //return tempFilePath;
       }
       catch (Exception ex)
       {
-        Console.Write(ex.Message);
+        Console.WriteLine(ex.Message);
         throw ex;
       }
     }

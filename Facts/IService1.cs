@@ -9,7 +9,6 @@ using System.Web.Services.Description;
 
 namespace Facts
 {
-  // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IService1" in both code and config file together.
   [ServiceContract]
   public interface FactService
   {
@@ -58,31 +57,4 @@ namespace Facts
       set { unit = value; }
     }
   }
-
-  //public class Program
-  //{
-  //  static void Main(string[] args)
-  //  {
-  //    WebServiceHost host = new WebServiceHost(typeof(Service), new Uri("http://localhost:8000/"));
-  //    try
-  //    {
-  //      ServiceEndpoint ep = host.AddServiceEndpoint(typeof(FactService), new WebHttpBinding(), "");
-  //      host.Open();
-  //      using (ChannelFactory<FactService> cf = new ChannelFactory<FactService>(new WebHttpBinding(), "http://localhost:8000"))
-  //      {
-  //        cf.Endpoint.Behaviors.Add(new WebHttpBehavior());
-  //      }
-
-  //      Console.WriteLine("Press <ENTER> to terminate");
-  //      Console.ReadLine();
-
-  //      host.Close();
-  //    }
-  //    catch (CommunicationException cex)
-  //    {
-  //      Console.WriteLine("An exception occurred: {0}", cex.Message);
-  //      host.Abort();
-  //    }
-  //  }
-  //}
 }
