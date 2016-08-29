@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Facts</title>
+	<meta charset="utf-8" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css"/>
+</head>
+<body class="ui padded">
+    <div class="ui padded page container">
+        <div class="ui menu">
+            <h5 class="header item">Data</h5>
+            <div class="right menu">
+                <a href="/Service1.svc/GetExcel" target="_blank" class="item"><i class="icon download"></i>Download</a>
+            </div>
+        </div>
+        <div class="ui segment" id="dataArea">
+            <table class="ui table">
+                <thead>
+                    <tr>
+                        <th>Field</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody id="tablebody">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js" type="text/javascript"></script>
+    <script src="app.js" type="text/javascript"></script>
+</body> 
+</html>

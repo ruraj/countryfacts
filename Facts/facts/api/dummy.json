@@ -1,0 +1,47 @@
+﻿[
+  {
+    "Name": "Electricity - production:",
+    "Val": "202 million kWh (2012 est.)",
+    "Unit": "N/A"
+  },
+  {
+    "Name": "Electricity - consumption:",
+    "Val": "282.9 million kWh (2012 est.)",
+    "Unit": "N/A"
+  },
+  {
+    "Name": "Electricity - exports:",
+    "Val": "0 kWh (2013 est.)",
+    "Unit": "N/A"
+  },
+  {
+    "Name": "Electricity - imports:",
+    "Val": "95 million kWh (2012 est.)",
+    "Unit": "N/A"
+  },
+  {
+    "Name": "Electricity - installed generating capacity:",
+    "Val": "55,000 kW (2012 est.)",
+    "Unit": "N/A"
+  },
+  {
+    "Name": "Electricity - from fossil fuels:",
+    "Val": "1.8% of total installed capacity (2012 est.)",
+    "Unit": "N/A"
+  },
+  {
+    "Name": "Electricity - from nuclear fuels:",
+    "Val": "0% of total installed capacity (2012 est.)",
+    "Unit": "N/A"
+  },
+  {
+    "Name": "Electricity - from hydroelectric plants:",
+    "Val": "98.2% of total installed capacity (2012 est.)",
+    "Unit": "N/A"
+  },
+  {
+    "Name": "Electricity - from other renewable sources:",
+    "Val": "0% of total installed capacity (2012 est.)",
+    "Unit": "N/A"
+  }
+]
